@@ -11,7 +11,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-cd ${INSTALLDIR} || exit
+cd ${INSTALLDIR}
 
 echo -e "${GREEN}Installing nodejs${NC}"
 apt-get install -y apt-transport-https curl
