@@ -1,5 +1,7 @@
 # Xen Orchestra Installer
 
+[![Build Status](https://travis-ci.com/patrezze/xo-installer.svg?branch=master)](https://travis-ci.com/patrezze/xo-installer)
+
 Este script instala o Xen Orchestra a partir dos códigos fontes [xen-orchestra](https://github.com/vatesfr/xen-orchestra).
 
 Durante o processo as dependências necessárias são instaladas e os fontes são compilados. Além disso, o serviço é habilitado e iniciado.
