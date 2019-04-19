@@ -35,11 +35,12 @@ yarn
 yarn build
 
 echo -e "${GREEN}Copying configuration${NC}"
-cd xen-orchestra/packages/xo-server || exit
+cd packages/xo-server || exit
 cp "${SCRIPTPATH}"/config/.xo-server.toml .xo-server.toml
 cp "${SCRIPTPATH}"/config/xo-server.service /etc/systemd/system/xo-server.service
 
 echo -e "${GREEN}Linking modules${NC}"
+mkdir -p /usr/local/lib/node_modules 
 ln -sv /opt/xen-orchestra/packages/xo-server-auth-ldap /usr/local/lib/node_modules/
 ln -sv /opt/xen-orchestra/packages/xo-server-backup-reports /usr/local/lib/node_modules/
 ln -sv /opt/xen-orchestra/packages/xo-server-load-balancer /usr/local/lib/node_modules/
@@ -56,3 +57,8 @@ systemctl enable xo-server.service
 echo -e "${GREEN}Starting xen-orchestra${NC}"
 systemctl start xo-server.service
 systemctl status xo-server.service
+
+echo ""
+echo -e "${GREEN}Xen Orchestra installed${NC}"
+echo -e "Default user: \"admin@admin.net\" with password \"admin\""
+echo ""
