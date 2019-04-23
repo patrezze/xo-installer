@@ -1,4 +1,4 @@
-# Xen Orchestra Installer
+# Xen Orchestra Installer Script
 
 [![Build Status](https://travis-ci.com/patrezze/xo-installer.svg?branch=master)](https://travis-ci.com/patrezze/xo-installer)
 
@@ -6,7 +6,7 @@ Este script instala o Xen Orchestra a partir dos códigos fontes [xen-orchestra]
 
 Durante o processo as dependências necessárias são instaladas e os fontes são compilados. Além disso, o serviço é habilitado e iniciado.
 
-> O procedimento foi testado no **Debian Stretch** e suporta distribuíções Linux baseadas no [Debian](https://www.debian.org).
+> O procedimento foi testado no **Debian 9 (Stretch)**.
 
 Por padrão, o script instala o Xen Orchestra no diretório `/opt`.
 
