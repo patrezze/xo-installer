@@ -6,7 +6,7 @@ Este script instala o Xen Orchestra a partir dos códigos fontes [xen-orchestra]
 
 Durante o processo as dependências necessárias são instaladas e os fontes são compilados. Além disso, o serviço é habilitado e iniciado.
 
-> O procedimento foi testado no **Debian 9 (Stretch)**.
+> O procedimento foi testado no **Debian 9 (Stretch) x64**.
 
 Por padrão, o script instala o Xen Orchestra no diretório `/opt`.
 
